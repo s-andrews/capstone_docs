@@ -3,8 +3,8 @@ home: true
 title: Home
 heroImage: https://vuejs.press/images/hero.png
 actions:
-  - text: Get Started
-    link: /getting-started.html
+  - text: Documentation
+    link: /cluster-basics.html
     type: primary
 
   - text: Introduction
