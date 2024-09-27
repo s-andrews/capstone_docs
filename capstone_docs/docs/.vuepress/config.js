@@ -5,11 +5,11 @@ import { viteBundler } from '@vuepress/bundler-vite'
 export default defineUserConfig({
   lang: 'en-US',
 
-  title: 'Capstone Docs',
+  title: 'Capstone Documentation',
   description: 'Documentation for the Capstone Cluster',
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: '/capstone_logo_path.svg',
 
     navbar: [
       {text: "Home", link: '/'},
