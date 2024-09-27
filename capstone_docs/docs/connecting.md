@@ -1,9 +1,9 @@
 # Connecting to the cluster
 
 ## Registering to use the cluster
-Before you can use the cluster, you need to be registered as a user on the system. Anyone at the institute can just drop an email to simon.andrews@babraham.ac.uk and he will set your account up for you. Everyone at the institute has free access to the cluster.
+Before you can use the cluster, you need to be registered as a user on the system. Anyone at the institute can just drop an email to [simon.andrews\@babraham.ac.uk](mailto:simon.andrews\@babraham.ac.uk?subject=Capstone%20Registration) and he will set your account up for you. Everyone at the institute has free access to the cluster.
 
-Anyone from a campus company who wishes to use the cluste can also contact simon.andrews@babraham.ac.uk to go through the options for using the cluster and the different levels of access which are available. Access to the cluster for campus companies is not free, and we can go through the costs for different levels of access to work out what would work for you.
+Anyone from a campus company who wishes to use the cluste can also contact [simon.andrews\@babraham.ac.uk](mailto:simon.andrews\@babraham.ac.uk?subject=Capstone%20Registration) to go through the options for using the cluster and the different levels of access which are available. Access to the cluster for campus companies is not free, and we can go through the costs for different levels of access to work out what would work for you.
 
 ## Where can I access the cluster from?
 
@@ -37,3 +37,42 @@ Mac users can connect to the cluster just using the Terminal.app program, which 
 
 ### Linux
 Anyone using Linux as their desktop operating system generally won't need to install anything additional to connect to the cluster as all of the software required will be present already.
+
+## Making a connection (windows)
+The instructions here assume that you need to run both command line and graphical programs on the cluster.  If you're just doing command line programs then you can ignore all of the parts relating to VcXsrv.
+
+Before connecting to the head node ensure that the VcXsrv Windows X Server program is running (```Start > All Programs > VcXsrv > XLaunch```).   The window below should pop-up, keep the defaults (as show here) and click ```Next```.  
+
+In the new pop-up window, keep the default ```Start no client``` and then click ```Next```.
+
+And again, when another pop-up window is displayed, keep the defaults (as shown below) and click ```Next```.
+
+Once VcXsrv Windows X Server is running, you can use PuTTY to connect to the cluster.  When you first run PuTTY you will see the main configuration screen.
+
+
+On the front screen you need to enter the name of the head node in the ```Host``` box, which is ```capstone```.  If you want to run graphical programs then you also need to move to the ```Connection > SSH > X11``` option, and tick the box which says ```Enable X11 forwarding```.
+
+You can now save these settings by putting a name in the ```Saved Sessions``` box on the main screen and then pressing Save.  In future you can then connect to the cluster by simply double clicking on the saved session in the saved session list.
+
+When you start a session you will see a PuTTY screen appear from where you can enter your login details.  The details you use will be your normal windows username and password.
+
+## Making a connection (OSX)
+To connect to the cluster first start the ```XQuartz``` program from your applications folder. This may open an "xterm" window, but if it does you can close this.
+
+To make an SSH connection open the ```Terminal``` application from your applications folder.  You should see a text window appear.
+
+Once the terminal appears you can connect to the cluster by running:
+
+```ssh -YC capstone.babraham.ac.uk```
+
+…and using your password to connect.
+
+
+## Making a connection (Linux)
+Linux users can connect to the cluster from whichever terminal application they normally use.  The command line would be the same as for OSX.
+
+```ssh -YC capstone.babraham.ac.uk```
+
+If the username you’re using on your local linux session isn’t the same as your cluster username then you can specify a specific user to connect as using
+
+```ssh -YC username@capstone.babraham.ac.uk```
