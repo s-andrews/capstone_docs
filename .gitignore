@@ -1,3 +1,7 @@
+# vuepress
+capstone_docs/docs/.vuepress/.cache
+capstone_docs/docs/.vuepress/.temp
+
 # Logs
 logs
 *.log
