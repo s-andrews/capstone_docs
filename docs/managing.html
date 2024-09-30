@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.15" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>Managing Jobs | Capstone Documentation</title><meta name="description" content="Documentation for the Capstone Cluster">
+    <link rel="preload" href="/assets/style-DY6JTdq5.css" as="style"><link rel="stylesheet" href="/assets/style-DY6JTdq5.css">
+    <link rel="modulepreload" href="/assets/app-BlEJ3rZJ.js"><link rel="modulepreload" href="/assets/managing.html-BVZVfq3q.js">
+    <link rel="prefetch" href="/assets/index.html-BqordDyk.js" as="script"><link rel="prefetch" href="/assets/connecting.html-B6djVViW.js" as="script"><link rel="prefetch" href="/assets/help.html-yXS2R1sD.js" as="script"><link rel="prefetch" href="/assets/introduction.html-I147OPe0.js" as="script"><link rel="prefetch" href="/assets/data.html-Chk9cGDP.js" as="script"><link rel="prefetch" href="/assets/jobs.html-BtoIiwvo.js" as="script"><link rel="prefetch" href="/assets/software.html-DNlonCQR.js" as="script"><link rel="prefetch" href="/assets/transfer.html-Dwcf4wQU.js" as="script"><link rel="prefetch" href="/assets/404.html-DlQMH0nP.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container external-link-icon" vp-container><!--[--><header class="vp-navbar" vp-navbar><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/"><img class="vp-site-logo" src="/capstone_logo_path.svg" alt="Capstone Documentation"><span class="vp-site-name vp-hide-mobile" aria-hidden="true">Capstone Documentation</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="Home"><!---->Home<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/introduction.html" aria-label="Introduction"><!---->Introduction<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/connecting.html" aria-label="Connecting"><!---->Connecting<!----></a></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="Using"><span class="title">Using</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="Using"><span class="title">Using</span><span class="right arrow"></span></button><ul style="display:none;" class="vp-navbar-dropdown"><!--[--><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/docs/software.html" aria-label="Accessing Software"><!---->Accessing Software<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/docs/data.html" aria-label="Storing Data"><!---->Storing Data<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/docs/jobs.html" aria-label="Running Jobs"><!---->Running Jobs<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/docs/transfer.html" aria-label="Transferring Data"><!---->Transferring Data<!----></a></li><!--]--></ul></div></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/help.html" aria-label="Help"><!---->Help<!----></a></div><!--]--></nav><!--[--><!--]--><button type="button" class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="Home"><!---->Home<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/introduction.html" aria-label="Introduction"><!---->Introduction<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/connecting.html" aria-label="Connecting"><!---->Connecting<!----></a></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="Using"><span class="title">Using</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="Using"><span class="title">Using</span><span class="right arrow"></span></button><ul style="display:none;" class="vp-navbar-dropdown"><!--[--><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/docs/software.html" aria-label="Accessing Software"><!---->Accessing Software<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/docs/data.html" aria-label="Storing Data"><!---->Storing Data<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/docs/jobs.html" aria-label="Running Jobs"><!---->Running Jobs<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/docs/transfer.html" aria-label="Transferring Data"><!---->Transferring Data<!----></a></li><!--]--></ul></div></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/help.html" aria-label="Help"><!---->Help<!----></a></div><!--]--></nav><!--[--><!--]--><ul class="vp-sidebar-items"><!--[--><li><p tabindex="0" class="vp-sidebar-item vp-sidebar-heading">Managing Jobs <!----></p><!----></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div class="theme-default-content" vp-content><!--[--><!--]--><div><h1 id="managing-jobs" tabindex="-1"><a class="header-anchor" href="#managing-jobs"><span>Managing Jobs</span></a></h1><p>In the [/docs/jobs](running jobs) page you can see how to submit jobs to the batch queue. Here we will look at how to monitor the progress of jobs you have submitted, or look at the metrics from jobs you have submitted in the past.</p><h2 id="looking-at-the-queue" tabindex="-1"><a class="header-anchor" href="#looking-at-the-queue"><span>Looking at the queue</span></a></h2><p>Once you have submitted some jobs to the queue there will be no indication of progress until the job is returned to you. However, you can monitor the current state of the queue to see what jobs you have running and where they are. For simple monitoring there is a command line tool called <code>show_queue</code> which will show you what is currently in the queue. If you run this it will show you a summary of all of the jobs that you are currently running. By default it will show jobs from all users, but if you add <code>-u [your username]</code> then it will only show your jobs.</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">$ show_queue -u inglesfs</span>
+<span class="line">JOBID   PARTITI NAME              USER     STATE   TIME       MIN_MEM TASKS   MIN_CPU NODELIST</span>
+<span class="line">83842   normal  wait_R2           inglesfs PENDING 0:00       1G      1       1       Dependency</span>
+<span class="line">89681   normal  nf-BISMARK_(EM_He inglesfs RUNNING 4:05:56    20G     1       5       compute-0-8</span>
+<span class="line">89677   normal  nf-BISMARK_(EM_Bu inglesfs RUNNING 4:07:07    20G     1       5       compute-0-2</span>
+<span class="line">89675   normal  nf-BISMARK_(EM_Bu inglesfs RUNNING 4:07:09    20G     1       5       compute-0-10</span>
+<span class="line">89672   normal  nf-BISMARK_(EM_So inglesfs RUNNING 4:11:07    20G     1       5       compute-0-3</span>
+<span class="line">89668   normal  nf-BISMARK_(EM_He inglesfs RUNNING 4:11:14    20G     1       5       compute-0-7</span>
+<span class="line">89664   normal  nf-BISMARK_(EM_Bu inglesfs RUNNING 4:13:07    20G     1       5       compute-0-7</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>You’ll obviously use your own username in the command (unless you want to see what everyone is running)</p><p>The <code>STATE</code> column tells you the status of each job. The main ones you’re likely to see are:</p><p>• <code>RUNNING</code> The job is running • <code>PENDING</code> The job is paused waiting for resources to become available or dependent jobs to finish</p><p>Initially, if you submit multiple jobs you may only see one of them starting, but others should start after a brief delay. The cluster will work through your jobs in order until they are all complete.</p><h2 id="monitoring-completed-jobs" tabindex="-1"><a class="header-anchor" href="#monitoring-completed-jobs"><span>Monitoring completed jobs</span></a></h2><p>If you want to look at jobs which have finished running to see if they completed OK, how long they took, and how much memory they used then you can do this using the <code>show_jobs</code> command.</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">$ show_jobs</span>
+<span class="line">ID    Date        Name            CPU Rmem   Umem   Elapsed Stat</span>
+<span class="line">----- ----------- --------------- --- ----- ----- --------- ----</span>
+<span class="line">89790 24/09@15:44 test_job        2   2.0     0.0        2s COMP</span>
+<span class="line">89789 24/09@15:44 test_job        2   2.0     0.0        2s COMP</span>
+<span class="line">89788 24/09@15:44 test_job        2   2.0     0.0        2s COMP</span>
+<span class="line">89787 24/09@15:44 test_job        2   2.0     0.0        1s COMP</span>
+<span class="line">89786 24/09@15:44 test_job        2   2.0     0.0        1s COMP</span>
+<span class="line">89689 24/09@12:26 juypterserv     1   20.0    0.1       33s CANC</span>
+<span class="line">89688 24/09@12:23 juypterserv     1   20.0    0.1       44s CANC</span>
+<span class="line">89686 24/09@12:17 juypterserv     1   20.0    0.1     2m24s CANC</span>
+<span class="line">89684 24/09@12:12 bash            1   19.5    0.0     1m12s COMP</span>
+<span class="line">89683 24/09@12:08 juypterserv     1   20.0    0.0        2s FAIL</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>By default this will show you your 20 most recent jobs which finished in the last 2 weeks. If you want to see more jobs then you can add <code>-n 100</code> to show you the last 100 jobs.</p><p>The last column in this output says what happened to the job</p><p><code>COMP</code> = completed successfully <code>CANC</code> = cancelled by you <code>FAIL</code> = job exited in an error state <code>OOM </code> = job used more memory than it was allocated</p><p>The <code>Rmem</code> and <code>Umem</code> show the amount of memory requested, and then actually used.</p><h2 id="removing-jobs-from-the-queue" tabindex="-1"><a class="header-anchor" href="#removing-jobs-from-the-queue"><span>Removing jobs from the queue</span></a></h2><p>If you decide that having started a job you no longer want it to run then you can delete it from the queue at any time. You can only delete your own jobs though.</p><p>To remove a job first use squeue to find the job id for the job you want to remove. You can then use <code>scancel</code> to remove the job. You can specify multiple ids separated by spaces.</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">$ show_queue</span>
+<span class="line">             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)</span>
+<span class="line">              2914    normal    test1 rodrigue  R       0:04      1 pebble001</span>
+<span class="line">              2915    normal    test2 rodrigue  R       0:04      1 pebble001</span>
+<span class="line">              2916    normal    test3 rodrigue  R       0:04      1 pebble001</span>
+<span class="line">              2917    normal    test4 rodrigue  R       0:04      1 pebble001</span>
+<span class="line">              2918    normal    test5 rodrigue  R       0:04      1 pebble002</span>
+<span class="line">              2919    normal    test6 rodrigue  R       0:04      1 pebble002</span>
+<span class="line">              2920    normal    test7 rodrigue  R       0:04      1 pebble002</span>
+<span class="line">              2921    normal    test8 rodrigue  R       0:04      1 pebble002</span>
+<span class="line">              2922    normal    test9 rodrigue  R       0:04      1 pebble003</span>
+<span class="line">              2923    normal   test10 rodrigue  R       0:04      1 pebble003</span>
+<span class="line"></span>
+<span class="line">$ scancel 2918 2919 2920</span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">$ show_queue</span>
+<span class="line">             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)</span>
+<span class="line">              2914    normal    test1 rodrigue  R       0:04      1 pebble001</span>
+<span class="line">              2915    normal    test2 rodrigue  R       0:04      1 pebble001</span>
+<span class="line">              2916    normal    test3 rodrigue  R       0:04      1 pebble001</span>
+<span class="line">              2917    normal    test4 rodrigue  R       0:04      1 pebble001</span>
+<span class="line">              2921    normal    test8 rodrigue  R       0:04      1 pebble002</span>
+<span class="line">              2922    normal    test9 rodrigue  R       0:04      1 pebble003</span>
+<span class="line">              2923    normal   test10 rodrigue  R       0:04      1 pebble003</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="vp-meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: simon@proteo.me.uk">Simon Andrews</span><!----><!--]--><!--]--></span></div></div></footer><!----><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-BlEJ3rZJ.js" defer></script>
+  </body>
+</html>
