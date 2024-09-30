@@ -21,10 +21,10 @@ To upload you can just drag and drop onto the web interface.  You can upload eit
 ### Graphical Programs
 There are a number of graphical programs which can be used to do data transfer using the SFTP protocol, which is what the cluster uses.  Commonly used ones are:
 
-* [https://cyberduck.io/](Cyberduck) (Windows or OSX)
-* [https://filezilla-project.org/](Filezilla) (Windows or OSX)
-* [https://bitvise.com/ssh-client](Bitvise SSH Client) (Windows only)
-* [https://winscp.net/](WinSCP) (Windows only)
+* [Cyberduck](https://cyberduck.io/) (Windows or OSX)
+* [Filezilla](https://filezilla-project.org/) (Windows or OSX) 
+* [Bitvise SSH Client](https://google.com/) (Windows only)
+* [WinSCP](https://winscp.net/) (Windows only)
 
 When setting up a connection in these clients you will either be asked for a connection URL, or for the separate details of the connection.
 
