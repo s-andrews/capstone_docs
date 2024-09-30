@@ -4,7 +4,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   lang: 'en-US',
-
+  base: 'capstone_docs',
   title: 'Capstone Documentation',
   description: 'Documentation for the Capstone Cluster',
 
