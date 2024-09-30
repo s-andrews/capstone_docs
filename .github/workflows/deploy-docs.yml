@@ -12,6 +12,9 @@ permissions:
 
 jobs:
   deploy-gh-pages:
+    defaults:
+      run:
+        working-directory: ./capstone_docs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
