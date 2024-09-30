@@ -43,18 +43,35 @@ The instructions here assume that you need to run both command line and graphica
 
 Before connecting to the head node ensure that the VcXsrv Windows X Server program is running (```Start > All Programs > VcXsrv > XLaunch```).   The window below should pop-up, keep the defaults (as show here) and click ```Next```.  
 
+![Xlaunch](./images/xlaunch.png)
+
 In the new pop-up window, keep the default ```Start no client``` and then click ```Next```.
+
+![Xlaunch Startup](./images/xlaunch_startup.png)
 
 And again, when another pop-up window is displayed, keep the defaults (as shown below) and click ```Next```.
 
+![Xlaunch Clipboard](./images/xlaunch_clipboard.png)
+
 Once VcXsrv Windows X Server is running, you can use PuTTY to connect to the cluster.  When you first run PuTTY you will see the main configuration screen.
 
+![Putty Front](./images/putty_front.png)
 
 On the front screen you need to enter the name of the head node in the ```Host``` box, which is ```capstone```.  If you want to run graphical programs then you also need to move to the ```Connection > SSH > X11``` option, and tick the box which says ```Enable X11 forwarding```.
 
+![Putty X11](./images/putty_x11.png)
+
 You can now save these settings by putting a name in the ```Saved Sessions``` box on the main screen and then pressing Save.  In future you can then connect to the cluster by simply double clicking on the saved session in the saved session list.
 
-When you start a session you will see a PuTTY screen appear from where you can enter your login details.  The details you use will be your normal windows username and password.
+When you start a session you will see a PuTTY screen appear from where you can enter your login details.  The first time you connect to the cluster you will get a warning about the server not being recognised.  If you press ```Accept``` then you should never see this again.
+
+![Putty New Key](./images/putty_newkey.png)
+
+The login details you use will be your normal domain username and password.
+
+![Putty Login](./images/putty_login.png)
+
+
 
 ## Making a connection (OSX)
 To connect to the cluster first start the ```XQuartz``` program from your applications folder. This may open an "xterm" window, but if it does you can close this.
