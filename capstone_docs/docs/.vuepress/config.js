@@ -7,6 +7,8 @@ export default defineUserConfig({
   title: 'Capstone Documentation',
   description: 'Documentation for the Capstone Cluster',
 
+  publicPath: '/capstone_docs/',
+
   theme: defaultTheme({
     logo: '/capstone_logo_path.svg',
 
