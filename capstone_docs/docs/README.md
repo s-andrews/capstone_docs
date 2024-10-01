@@ -8,7 +8,7 @@ footer: GPLv3 Licensed | Copyright © 2024 Simon Andrews
 xfeatures:
   - title: Written Documentation
     details: This site provides comprehensive documentation of all aspects of the cluster
-    link: 'readme'
+    link: '#'
   - title: Video Tutorials
     details: Look at the short videos we prepared to demonstrate common tasks on the cluster
     link: https://vimeo.com/user/132030108/folder/21518400
