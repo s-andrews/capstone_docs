@@ -22,6 +22,7 @@ export default defineUserConfig({
           {text: "Accessing Software", link: '/docs/software'},
           {text: "Storing Data", link: '/docs/data'},
           {text: "Running Jobs", link: '/docs/jobs'},
+          {text: "Managing Jobs", link: '/docs/managing'},
           {text: "Transferring Data", link: '/docs/transfer'},
         ]
       },

@@ -32,6 +32,8 @@ The software you'll need to connect to the cluster varies depending on what oper
 ### Windows
 Windows users will need to install two pieces of software to access the cluster.  To allow a command line connection they should use PuTTY.  For running graphical programs you will need an additional piece of software called VcXsrv Windows X Server. For institute machines, both of these pieces of software are available in the windows software centre.
 
+![Xlaunch](./images/software_centre.png)
+
 ### OSX
 Mac users can connect to the cluster just using the Terminal.app program, which should already be available on your system. If you want to use graphical programs then you will also need to install the XQuartz app.  For institute users this is available in the managed software application.
 

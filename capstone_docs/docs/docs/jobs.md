@@ -48,7 +48,7 @@ nf_bisulfite_scNMT       nf_hisat2
 
 The pipelines are split into two types, some just run a single program (eg ```nf_bowtie2```) and some which run a suite of programs to fully process a particular type of data (eg ```nf_rnaseq```).  Multi stage pipelines are what we use for the processing of data from our sequencing facility and will coordinate the running of several programs.  For example this is the set of analyses performed by the nf_rnaseq pipeline.
 
-Documentation for the different pipelines can currently be accessed [https://github.com/s-andrews/nextflow_pipelines/blob/master/Docs/Nextflow_at_Babraham.md](here).
+Documentation for the different pipelines can currently be accessed [here](https://github.com/s-andrews/nextflow_pipelines/blob/master/Docs/Nextflow_at_Babraham.md).
 
 
 ### Running Nextflow pipelines
@@ -165,5 +165,9 @@ If you want to do more complicated things, you will have to directly use the sba
 
 If you would like to run either RStudio or JupyterLab on a compute node then rather than going via an ssh connection and using ```qlogin``` you can also access these environments via the cluster web interface.
 
-If you log into the web interface at [https://capstone.babraham.ac.uk](https://capstone.babraham.ac.uk) and then click on the ```programs``` tab you will see options to launch and then connect to either an Rstudio Server or Jupyter Lab session.  These sessions will run on an interactive compute node, but you can access them directly from your browser.
+If you log into the web interface at [https://capstone.babraham.ac.uk](https://capstone.babraham.ac.uk) and then click on the ```programs``` tab you will see options to launch and then connect to either an Rstudio Server or Jupyter Lab session.  
+
+![Web Programs](./images/web_programs.png)
+
+These sessions will run on an interactive compute node, but you can access them directly from your browser.
 

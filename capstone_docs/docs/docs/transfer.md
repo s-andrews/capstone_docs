@@ -41,6 +41,42 @@ For programs which ask for the details separately the information you need will 
 
 Username and password are your normal login username and password.
 
+#### Cyberduck configuration
+Select ```Open Connection``` from the top left of the program
+
+![Cyberduck](./images/cyberduck.png)
+
+#### Filezilla configuration
+Select ```File > Site Manager``` from the main menu
+
+![Filezilla](./images/filezilla.png)
+
+#### Bitvise SSH configuration
+The main connection window should open as soon as the program opens.  Once you've made a connection it will stay in your system tray at the bottom right of your screen.  You can right click on the bitvise icon in the tray and select ```New SFTP window``` and it should open the connection without you having to log in again.
+
+![Bitvise](./images/bitvise.png)
+
+If you get an error saying that the connection failed then there is an additional step you'll need to take
+
+![Bitvise Error](./images/bitvise_error.png)
+
+Go into the SSH options
+
+![Bitvise Error](./images/bitvise_ssh_options.png)
+
+Click on the blue link which says ```Key exchange``` and then tick the box which says ```diffie-hellman-group14-sha256```
+
+![Bitvise New Method](./images/bitvise_new_method.png)
+
+It should now work.  You'll only need to do this once.
+
+
+#### WinSCP configuration
+Select ```Tabs > New Tab > Remote Tab```
+
+![WinSCP](./images/winscp.png)
+
+
 Once you have connected via these programs you will either have a single window from which you can drag and drop data to and from your local machine, or you will have a two panel window where the left side is your local machine and the right is the cluster and you can move data from one side to the other.
 
 

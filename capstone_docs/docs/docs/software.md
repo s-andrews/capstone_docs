@@ -9,6 +9,8 @@ Most of the software on the cluster is controlled by a system called "environmen
 
 All of the options relating to environment modules are accessed through a program called ```module```.
 
+### Listing available packages
+
 To see which packages are available to you on the cluster you can run the command
 
 ```module avail```
@@ -37,6 +39,9 @@ $ module avail
 ```
 
 You can see that each package has both a name and an associated version number.  Some packages have multiple versions installed whereas others will have only one.
+
+### Using a software package
+
 
 To use a package you use the ```module load``` command.  You can choose to specify a specific module to load (eg ```bowtie2/2.5.3```) or you can just use the module name (bowtie2) in which case you’ll get the latest version of that module.
 
@@ -70,6 +75,8 @@ Currently Loaded Modulefiles:
   2) fastqc/0.10.1       4) trim_galore/0.2.5
 ```
 
+### Removing packages
+
 If you want to reset the loaded modules in your current shell then you can remove them all by running
 
 ```module purge```
@@ -79,4 +86,28 @@ Module loading is reset every time you start a new shell.
 If you need a package which isn’t available either by default or through the environment modules then please come to speak to someone in the bioinformatics group who can help you to work out the best way to add in the software you need.
 
  
+## Installing your own software
 
+If possible it's always good to get software installed into the central software modules system, but you can also install software yourself.
+
+All installed software should be kept in your home directory.  You don't have permission to install in any of the system directories.
+
+If you are installing software you should generally do this directly on the head node.  All of the compilers, build tools and development libraries are only installed on the head node and not on any of the compute nodes.  Runtime libraries are on all nodes.
+
+### Installation with a package manager
+
+One of the most common ways to install software is the use of a third party package manager. Many packages will now recommend this method for installing software, and it can be very convenient when it works (but also quite a pain if it fails!).
+
+Historically people tended to use the [conda](https://anaconda.org/anaconda/conda) package manager, but due to [legal problems associated with the use of this software](https://www.theregister.com/2024/08/08/anaconda_puts_the_squeeze_on/) the use of conda on the cluster is **not permitted**.  The software itself is open source and not problematic, but the default configuration uses repositories which require a paid license.  There are also better solutions available which are a drop in replacement.
+
+Instead of conda we recommend the use of [mamba](https://github.com/mamba-org/mamba) which is more functional, quicker and not legally encumbered.  If you have instructions for installing using conda you can just swap in mamba and things should just work.
+
+### Using containers
+
+Some workflows use containers such as [docker](https://www.docker.com/) to distribute software.  Because of the permissions it requires we cannot allow normal users to run docker on the cluster.  Instead we provide [singularity](https://docs.sylabs.io/guides/latest/user-guide/) which is a compatible container environment which can prepare its own containers, but can also [run docker containers](https://docs.sylabs.io/guides/2.6/user-guide/singularity_and_docker.html).
+
+### Manual compilation and installation
+
+If required you can manually compile and install software to your home directory.  You cannot install to system directories or perform any actions which require root privileges.  Generally, in a standard build procedure you will need to provide a ```--prefix``` argument (or similar) to specify a directory under your home directory into which software should be installed after compilation.  
+
+If you have any problems installing or running the software you need then please [get in touch](../help.html) and we'll be happy to help.
