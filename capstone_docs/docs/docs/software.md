@@ -98,9 +98,37 @@ If you are installing software you should generally do this directly on the head
 
 One of the most common ways to install software is the use of a third party package manager. Many packages will now recommend this method for installing software, and it can be very convenient when it works (but also quite a pain if it fails!).
 
-Historically people tended to use the [conda](https://anaconda.org/anaconda/conda) package manager, but due to [legal problems associated with the use of this software](https://www.theregister.com/2024/08/08/anaconda_puts_the_squeeze_on/) the use of conda on the cluster is **not permitted**.  The software itself is open source and not problematic, but the default configuration uses repositories which require a paid license.  There are also better solutions available which are a drop in replacement.
+Historically people tended to use the [conda](https://anaconda.org/anaconda/conda) package manager distributed by Anaconda.org, but due to [legal problems associated with the use of this software](https://www.theregister.com/2024/08/08/anaconda_puts_the_squeeze_on/) the use of conda from anaconda.org on the cluster is **not permitted**.  The software itself is open source and not problematic, but the default configuration uses repositories which require a paid license.  There are also better solutions available which are a drop in replacement.
 
-Instead of conda we recommend the use of [mamba](https://github.com/mamba-org/mamba) which is more functional, quicker and not legally encumbered.  If you have instructions for installing using conda you can just swap in mamba and things should just work.
+Instead of the anaconda derived conda distribtion we recommend using [miniforge](https://conda-forge.org/download/) from [conda-forge](https://conda-forge.org).  This will provide both the conda and mamba installers and the default configuration will not contain any legally encumbered repositories.
+
+To install conda into your environment you can do the following on the head node of the cluster:
+```
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+bash Miniforge3-Linux-x86_64.sh
+```
+During installation you should choose the default location for the installation (your home directory).  You will also be asked whether you it should activate conda by default - this is set to No by default, but you should opt for **Yes**. This will install the conda and mamba commands into your environment, but will also activate them by default when you log in, which you don't want.
+
+After the conda installation has finished you should immediately run:
+
+```
+conda config --set auto_activate_base false
+```
+To stop conda activating by default
+
+Conda is incompatible with much of the software installed via our module system, so you should only activate conda to use a specifically installed piece of software, keeping it active at other times will likely lead to other pieces of software breaking.  If you're not sure if conda is active then if you look at your command prompt if you see a name in round brackets at the start then conda is active (here it says base, but it could be any name).
+
+```
+(base) [andrewss@capstone ~]$
+```
+
+You can run the command above to stop the auto-activation, and you can deactivat it in a running shell with:
+
+```
+(base) [andrewss@capstone ~]$ conda deactivate
+[andrewss@capstone ~]$
+```
+
 
 ### Using containers
 
