@@ -163,7 +163,7 @@ If you want to do more complicated things, you will have to directly use the sba
  
 ## Running programs via the web interface
 
-If you would like to run either RStudio or JupyterLab on a compute node then rather than going via an ssh connection and using ```qlogin``` you can also access these environments via the cluster web interface.
+If you would like to run programs such as RStudio, JupyterLab, FileBrowser or Ollama on a compute node then rather than going via an ssh connection and using ```qlogin``` you can also access these environments via the cluster web interface.
 
 If you log into the web interface at [https://capstone.babraham.ac.uk](https://capstone.babraham.ac.uk) and then click on the ```programs``` tab you will see options to launch and then connect to either an Rstudio Server or Jupyter Lab session.  
 
@@ -171,3 +171,9 @@ If you log into the web interface at [https://capstone.babraham.ac.uk](https://c
 
 These sessions will run on an interactive compute node, but you can access them directly from your browser.
 
+### Running Ollama LLMs
+From the Programs menu you can start an Ollama server running a large language model.  Unlike the other programs on the list this doesn't have a direct web interface but provides an API to which you can then connect other programs.  When you start ollama you will have a button which will copy the API address to your clipboard.
+
+Once you have the API the simplest thing to do is start a chat web interface to use it.  The simplest of these is [Page Assist](https://github.com/n4ze3m/page-assist) which is a broswer extension to talk to LLMs.  If you install the extension then you can start it and then paste the URL into the box on the front page.  You'll then likely need to do shift+refresh on your page to get the full details to load, you can then select a model from the drop down at the top, and then put prompts into the chat box at the bottom.
+
+![Page Assist](./images/page_assist_screenshot.png)
