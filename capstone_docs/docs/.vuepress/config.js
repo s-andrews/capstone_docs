@@ -19,7 +19,12 @@ export default defineUserConfig({
       {
         text: "Using",
         children: [
-          {text: "Accessing Software", link: '/docs/software'},
+          {
+            text: "Software",
+            children: [
+              {text: "Accessing Software", link: '/docs/software'}    
+            ]
+          },
           {text: "Storing Data", link: '/docs/data'},
           {text: "Running Jobs", link: '/docs/jobs'},
           {text: "Managing Jobs", link: '/docs/managing'},
