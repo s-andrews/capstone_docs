@@ -26,11 +26,21 @@ export default defineUserConfig({
               {text: "Using R", link: 'docs/r.md'},
               {text: "Using Python", link: 'docs/python.md'}   
             ]
-          },      
-          {text: "Storing Data", link: '/docs/data'},
-          {text: "Running Jobs", link: '/docs/jobs'},
-          {text: "Managing Jobs", link: '/docs/managing'},
-          {text: "Transferring Data", link: '/docs/transfer'},
+          },
+          {
+            text: "Data",
+            children: [
+              {text: "Storing Data", link: '/docs/data'},
+              {text: "Transferring Data", link: '/docs/transfer'}  
+            ]
+          },
+          {
+            text: "Jobs",
+            children: [
+              {text: "Running Jobs", link: '/docs/jobs'},
+              {text: "Managing Jobs", link: '/docs/managing'}
+            ]
+          }
         ]
       },
       {text: "Help", link:'/help'}
