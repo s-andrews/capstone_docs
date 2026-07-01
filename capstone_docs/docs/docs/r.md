@@ -11,7 +11,7 @@ The second is more practical for day to day interactive analysis.
 
 ## Using R packages
 
-As of July 2026 we have changed the way that R packages are handled to make their use more scalable, reproducible and friendly.  We now use the ![Renv](https://rstudio.github.io/renv/) system to manange R packages, and we have this set up so that everyone can share the same central copy of the most commonly used packages.
+As of July 2026 we have changed the way that R packages are handled to make their use more scalable, reproducible and friendly.  We now use the [Renv](https://rstudio.github.io/renv/) system to manange R packages, and we have this set up so that everyone can share the same central copy of the most commonly used packages.
 
 The idea with Renv is that instead of having one big collection of packages associated with an R installation, that you set up a separate package repository for each project containing just the packages you're using for that project.  It will also record the packages you're using in a way which makes it simple to replicate the package set if you want to share your code with someone else, or if you want to use someone else's code on your machine.
 
