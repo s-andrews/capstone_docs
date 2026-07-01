@@ -12,5 +12,5 @@ Email: [babraham.bioinformatics@babraham.ac.uk](mailto://babraham.bioinformatics
 
 Teams: [Join the public Bioinformatics Teams Group](https://teams.microsoft.com/l/team/19%3Ad34c7880a137430a825a3c95189951e6%40thread.skype/conversations?groupId=fa64b1b5-b909-46a0-a140-565d4a2933ac&tenantId=de1147e5-c0dd-4a46-9d77-c8f4e6b43d00)
 
-Phone: (01223) 496463 (or just x6463 internally)
+
 
