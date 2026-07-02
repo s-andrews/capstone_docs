@@ -41,6 +41,8 @@ It will automatically restart and you should see something like this at the bott
 
 ## Installing packages
 
+### From CRAN and Bioconductor
+
 You can now install the packages you want from the global package cache.  You can do this using the standard ```install.packages``` command.  For BioConductor packages you should still use ```install.packages``` rather than the ```BiocManager::install``` function as Renv will handle this for you.  Most of the time the packages you install will come from the existing package cache so should be installed in a few seconds.  If there is anything missing from the cache Renv will try to install it for you and add it to the future cache.
 
 ```
@@ -86,4 +88,48 @@ Successfully installed 15 packages in 75 milliseconds.
 
 Remember that BioConductor packages will only work if you used ```bioconductor=TRUE``` with the ```init``` command.
 
+
+### From Github
+
+You can directly install from github with ```renv::install``` by using ```username/repository``` as the name of the package
+
+```
+> install.packages("s-andrews/qtemplate")
+The following package(s) will be installed:
+- qtemplate [s-andrews/qtemplate]
+- whisker   [0.4.1]
+These packages will be installed into "~/renv_demo/renv/library/linux-almalinux-9.7/R-4.6/x86_64-pc-linux-gnu".
+
+Do you want to proceed? [Y/n]: 
+# Downloading packages -------------------------------------------------------
+✔ qtemplate 0.1.0                          [27 kB in 0.56s]                   
+✔ whisker 0.4.1                            [74 kB in 0.59s]                   
+Successfully downloaded 2 packages in 1 second.                               
+
+# Installing packages --------------------------------------------------------
+✔ whisker 0.4.1                            [installed binary]                 
+✔ qtemplate 0.1.0                          [built from source in 2.4s]        
+Successfully installed 2 packages in 4.8 seconds.
+```
+
+### Package Installation Problems
 If you find packages which you're not able to install then please contact Bioinformatics who can install them for you and add them to the cache.
+
+
+## Updating an Renv
+
+Sometimes you will see a warning that some of the packages you have installed are not correctly recorded in your renv lock file.  This isn't a problem and just means you need to update the file. You can do this with:
+
+```
+renv::snapshot()
+```
+
+This won't do any harm if there's nothing to be done.
+
+## Restoring an Renv
+
+If you are given a project which used Renv or your coming back to an old project which you'd cleaned up then getting all of your packages back is as simple as
+
+```
+renv::restore()
+```
